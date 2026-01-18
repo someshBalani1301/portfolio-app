@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Light mode - default */
+* {
+  @apply transition-colors duration-300;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Light mode background */
+html {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 50%, #e0e7ff 100%);
+  background-attachment: fixed;
+  color-scheme: light;
+}
+
+/* Dark mode background */
+html.dark {
+  background: linear-gradient(135deg, #030712 0%, #111827 50%, #312e81 100%);
+  background-attachment: fixed;
+  color-scheme: dark;
+}
+
+body {
+  background: transparent;
+}
+
+#root {
+  background: transparent;
+  min-height: 100vh;
+}
