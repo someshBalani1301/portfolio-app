@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { ProfileImage } from "../common/ProfileImage";
+import { Linkedin, Github, Code2 } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -45,7 +46,7 @@ const HeroContent = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      Senior Software Engineer (7 Years Exp)
+      Senior Software Engineer (7.5+ Years Exp)
     </motion.h2>
     <motion.p
       className="text-gray-600 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed"
@@ -70,6 +71,44 @@ const HeroContent = () => (
       <Button href="#projects" variant="secondary">
         View Work
       </Button>
+    </motion.div>
+
+    <motion.div
+      className="flex gap-4 justify-center md:justify-start mb-6"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.45 }}
+    >
+      <motion.a
+        href="https://www.linkedin.com/in/somesh-balani/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+        whileHover={{ y: -2 }}
+        aria-label="LinkedIn Profile"
+      >
+        <Linkedin className="w-5 h-5 text-blue-600" />
+      </motion.a>
+      <motion.a
+        href="https://github.com/someshBalani1301"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+        whileHover={{ y: -2 }}
+        aria-label="GitHub Profile"
+      >
+        <Github className="w-5 h-5 text-gray-900" />
+      </motion.a>
+      <motion.a
+        href="https://leetcode.com/u/someshb_leet/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="p-2 bg-white rounded-full shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110"
+        whileHover={{ y: -2 }}
+        aria-label="LeetCode Profile"
+      >
+        <Code2 className="w-5 h-5 text-orange-600" />
+      </motion.a>
     </motion.div>
 
     <motion.div

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import resume from "../../assets/SOMESHBALANI(7yrs).pdf.pdf";
+import resume from "../../assets/Somesh_Balani_Senior_FullStack.pdf";
 
 export const Contact = () => {
   return (
